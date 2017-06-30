@@ -107,6 +107,17 @@ static XQDContactsManager *manager;
         
     }];
 }
++ (void)getAllContacts:(AuthorizationDeniedBlock)authotizationBlock allContacts:(AllContactsBlock)allContactsBlock {
+    [self getAuthorization:^(BOOL success) {
+        if (success) {
+            [self getAllContacts:^(NSArray *contacts) {
+                allContactsBlock(contacts);
+            }];
+        } else {
+            authotizationBlock();
+        }
+    }];
+}
 - (UIViewController *)pickerController {
     if (!_pickerController) {
         if (IOS_OR_LATER(9.0)) {
