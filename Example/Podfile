@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SimpleContactsManager_Example' do
+  pod 'SimpleContactsManager', :path => '../'
+
+  target 'SimpleContactsManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
