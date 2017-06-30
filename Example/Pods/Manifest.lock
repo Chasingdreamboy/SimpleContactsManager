@@ -1,0 +1,18 @@
+PODS:
+  - SimpleContactsManager (0.0.1):
+    - SimpleContactsManager/ContactsManager (= 0.0.1)
+  - SimpleContactsManager/ContactsManager (0.0.1)
+
+DEPENDENCIES:
+  - SimpleContactsManager (from `../`)
+
+EXTERNAL SOURCES:
+  SimpleContactsManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SimpleContactsManager: 18de488a7be5bd14c218183574fde7f1f5db58d4
+
+PODFILE CHECKSUM: 252a3d6191051b3b7741e6409f6cbdb9306a436f
+
+COCOAPODS: 1.2.1

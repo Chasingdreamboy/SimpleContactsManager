@@ -1,0 +1,6 @@
+framework module SimpleContactsManager {
+  umbrella header "SimpleContactsManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
